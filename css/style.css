@@ -20,6 +20,48 @@ body{
 	height: 100%;
 }
 
+.navigate{
+	position: fixed;
+	top: 8%;
+	right: 5%;
+
+}
+
+.nav{
+	position: relative;
+	list-style-type: none; 
+
+}
+
+.nav li{
+	display: block;
+	margin-left: 45px;
+	float: left;
+}
+
+.nav li a{
+	display: block;
+	text-decoration: none;
+	
+}
+
+span[class^='icon-']
+{
+	color: #404040;
+	font-size: 23pt;
+	transition: color 0.1s linear;
+}
+
+span[class^='icon-'].active
+{
+	color: #d3dc4e;
+}
+
+span[class^='icon-']:hover{
+		color: #d3dc4e;
+}
+
+
 .intro{
 	position: relative;
 	margin-top: 14%;
