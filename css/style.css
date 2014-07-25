@@ -4,7 +4,7 @@
 	padding: 0;
 }
 
-@font-face{
+/*@font-face{
 	font-family: 'ws-light';
 	src: url('../fonts/weblysleekuil.ttf');
 }
@@ -12,11 +12,11 @@
 @font-face{
 	font-family: 'ws-semi';
 	src : url('../fonts/weblysleekuisl.ttf');
-}
+}*/
 
 body{
 	background: #262626;
-		font-family: 'ws-semi';
+		font-family: 'lato';
 	width: 100%;
 	height: 100%;
 }
@@ -56,7 +56,7 @@ font-size: 01.5em;
 	.link-desc .nav li a:hover{
 		color: #f3f3f3;
 	}
-	.link-desc .nav li a:hover span{
+	.link-desc .nav li a:hover{
 		color: #d3dc4e;
 	}
 
@@ -108,13 +108,13 @@ span[class^='icon-'].active
 
 .primary{
 	color: #f3f3f3;
-	font-family: 'ws-semi';
+	/*font-family: 'ws-semi';*/
 	font-size: 30pt;
 }
 
 .secondary{
 	color: #404040;
-	font-family: 'ws-semi';
+	/*font-family: 'ws-semi';*/
 	font-size: 25pt;
 	margin-top: 3%;
 }
