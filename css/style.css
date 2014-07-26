@@ -31,8 +31,6 @@ body{
 
 .link-desc{
 	position: relative;
-	margin: 16% 0;
-	padding: 1px;
 }
 
 .nav, .nav2{
@@ -43,7 +41,8 @@ body{
 }
 
 .nav2{
-	margin-bottom: 50px;
+	
+	margin: 16% 0;	padding-bottom: 175px;
 }
 .nav li a, .nav2 li a{
 	color: #404040;
@@ -122,10 +121,13 @@ span[class^='icon-'].active
 	font-size: 25pt;
 	margin-top: 3%;
 }
+p.design{
+	color: #727272;
+}
 
 .design-links{
 	position: relative;
-	margin-top: 27%;
+	margin-top: 12%;
 }
 
 .design-links .d-links{
@@ -159,7 +161,7 @@ span[class^='icon-'].active
 	}
 	.design-links .d-links a:hover {
 		color: #727272;
-		text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+		/*text-shadow: 3px 3px 5px rgba(0,0,0,0.3);*/
 	}
 	
 	.design-links .d-links .behance a:hover span{
@@ -168,3 +170,58 @@ span[class^='icon-'].active
 	.design-links .d-links .dribbble a:hover span{
 			color: #EA4C89;
 	}
+
+	.contacts{
+		position: relative;
+		top: 30vh;
+		margin-left: 15%;
+	}
+
+	.contact-list{
+		
+	text-align: left;
+	display: block;
+font-size: 23pt;
+	list-style-type: none;
+	width: 70%;
+	}
+
+	.contact-list li{
+		margin-bottom: 20px;
+		
+	}
+
+	.contact-list a{
+		display: block;
+			text-decoration: none;
+			color: #727272;
+			transition: all 0.1s linear;
+	}
+
+	.contact-list a:hover{
+		color: #f3f3f3;
+		transform : translateX(5px);
+	}
+
+
+	.contact-list a span{
+		transition: all 0.1s linear;
+		color: #404040;
+	}
+
+	.contact-list a:hover span{
+		color: #d3dc4e;
+	}
+
+ ::-webkit-scrollbar
+ {
+	width: 10px;
+ }
+::-webkit-scrollbar-track{
+		display: none;
+}
+ ::-webkit-scrollbar-thumb{
+
+		background: #404040;
+	border-radius: 8px;
+ }
