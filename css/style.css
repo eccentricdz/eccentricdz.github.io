@@ -174,7 +174,7 @@ p.design{
 	.contacts{
 		position: relative;
 		margin-top: 14%;
-		margin-left: 15%;
+		
 	}
 
 	.contact-list{
@@ -184,6 +184,7 @@ p.design{
 font-size: 23pt;
 	list-style-type: none;
 	width: 70%;
+	margin-left: 15%;
 	}
 
 	.contact-list li{
