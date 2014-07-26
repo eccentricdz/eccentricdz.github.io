@@ -71,6 +71,7 @@ font-size: 01.5em;
 .nav li, .nav2 li{
 	display: block;
 	float: left;
+	margin-bottom: 20px;
 }
 
 .nav2 li:first-child{
