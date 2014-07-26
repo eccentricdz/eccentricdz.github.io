@@ -31,6 +31,7 @@ body{
 
 .link-desc{
 	position: relative;
+	padding-left: 15%;
 }
 
 .nav, .nav2{
@@ -42,7 +43,7 @@ body{
 
 .nav2{
 	
-	margin: 16% 0;	padding-bottom: 175px;
+	margin: 15% 0;	padding-bottom: 175px;
 }
 .nav li a, .nav2 li a{
 	color: #404040;
@@ -73,7 +74,7 @@ font-size: 01.5em;
 }
 
 .nav2 li:first-child{
-	margin-left: 15%;
+	/*margin-left: 15%;*/
 }
 
 .nav li:not(:last-child)
