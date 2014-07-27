@@ -20,6 +20,9 @@ body{
 	width: 100%;
 	height: 100%;
 }
+a{
+	display: block;
+}
 
 .navigate{
 	position: fixed;
@@ -228,3 +231,142 @@ font-size: 23pt;
 		background: #404040;
 	border-radius: 8px;
  }
+
+ .projects{
+ 	margin-top: 10%;
+ 	list-style-type: none;
+ }
+
+ .projects > li{
+ 	margin-left: 15%;
+ 	margin-bottom: 10%;
+ }
+
+ .projects section{
+ 	position: relative;
+ 	display: inline-block;
+ }
+
+ .block{
+ 	width: 300px;
+ 	height: 300px;
+ 	box-shadow: 5px 5px 30px 20px rgba(10,10,10,0.5);
+ 	transition: 0.2s;
+
+ }
+
+ .block:hover{
+ 	box-shadow: 15px 15px 30px 20px rgba(10,10,10,0.5);
+
+ }
+/*.block:after{
+  content: '';
+  position: absolute;
+  width: 95%;
+  height: 5%;
+  background: rgba(10,10,10,0.5);
+  display: block;
+  top: 115%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0 0 25px 5px rgba(10,10,10,0.8);
+}*/
+
+ .cube{
+ 	 position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+transform-style: preserve-3d;
+  transform : rotateY(0deg) rotateX(-3deg) rotateZ(0deg);
+  transition: 0.4s;
+}
+
+.cube:hover{
+transform: rotateY(-5deg) rotateX(-3deg)  rotateZ(0deg);
+}
+.cube div{
+    position: absolute;
+  height: 100%;
+  width: 100%;
+ 
+  top: 0;
+  left: 0;
+   
+}
+
+
+.recorder .front{
+	background: url("../images/recorder/1.jpg");
+		background-position: center;
+}
+.eplayer .front{
+	background: url("../images/eplayer/1.jpg");
+		background-position: center;
+		background-size: contain;
+}
+.front{
+	background-position: center;
+
+	transform: rotateY(0deg) translateZ(150px);
+}
+
+
+
+
+.right{
+	
+	background:#d3dc4e;
+transform: rotateY(90deg) translateZ(150px) ;
+}
+
+
+.top{
+  background: #404040;
+transform: rotateX(90deg) translateZ(150px);
+}
+.text{
+	position: absolute;
+	top: 0px;
+	width: 50%;
+	margin-left:10%;
+	padding-left: 5%;
+	border-left: 2px solid #404040;
+	transform: translateY(-30%);
+	
+}
+.text .title{
+	font-size: 23pt;
+	color: #f3f3f3;
+	margin-bottom: 5%;
+}
+
+.desc{
+	font-size: 15pt;
+	color: #727272;
+	margin-bottom: 5%;
+}
+
+.text a{
+	font-size: 15pt;
+	display: block;
+	text-decoration: none;
+	color: #727272;
+	transition: 0.2s;
+}
+
+.live{
+	margin-bottom: 2%;
+
+}
+
+.text a:hover{
+		color: #f3f3f3;
+	}
+
+
+	.text a:hover span{
+		color: #d3dc4e;
+	}
+
