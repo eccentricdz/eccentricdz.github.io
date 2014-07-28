@@ -306,6 +306,27 @@ transform: rotateY(-5deg) rotateX(-3deg)  rotateZ(0deg);
 		background-position: center;
 		background-size: contain;
 }
+.sharencare .front{
+	background: url("../images/sharencare/1.jpg");
+		background-position: center;
+}
+
+.smdb .front{
+	background: url("../images/smdb/1.jpg");
+		background-position: center;
+}
+.pingpong .front{
+	background: url("../images/pingpong/1.jpg");
+		background-position: center;
+}
+
+.graphx .front{
+	background: url("../images/graphx/1.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+}
 .front{
 	background-position: center;
 
