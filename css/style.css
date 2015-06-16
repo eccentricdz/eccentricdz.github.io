@@ -327,6 +327,22 @@ transform: rotateY(-5deg) rotateX(-3deg)  rotateZ(0deg);
 		background-repeat: no-repeat;
 
 }
+
+.bitotsav .front{
+	background: url("../images/bitotsav/1.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+}
+
+.vertechx .front{
+	background: url("../images/vertechx/1.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+}
 .front{
 	background-position: center;
 
