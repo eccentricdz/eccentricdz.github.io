@@ -6,7 +6,7 @@ export default class Rotator extends React.Component {
     return (
       <div className="my-rotator">
         {
-          this.props.elements.map(element => <p className="rotating-element">{element}</p>)
+          this.props.elements.map(element => <p className="rotating-element" key={element}>{element}</p>)
         }
       </div>
     )
