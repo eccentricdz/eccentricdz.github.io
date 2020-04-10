@@ -67,7 +67,7 @@ header p {
 
 /* Portrait */
 @media only screen  
-  and (max-width: 812px)
+  and (max-width: 700px)
   and (orientation: portrait) {
     .App {
       font-size: 16px;
