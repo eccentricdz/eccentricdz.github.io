@@ -1,0 +1,27 @@
+.toggle-container {
+  width: 55px;
+  height: 22px;
+  border: 3px solid orangered;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-switch {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  margin: 0 4px;
+  background: orangered;
+  position: absolute;
+  transition: all 250ms ease-in-out;
+}
+
+.toggle-container.left .toggle-switch {
+  left: 0;
+}
+
+.toggle-container.right .toggle-switch {
+  left: 31px;
+}
