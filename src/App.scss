@@ -1,0 +1,179 @@
+// header, footer {
+//   display: flex;
+//   align-items: flex-start;
+// }
+
+// .App {
+//   font-size: 24px;
+//   padding: 15vh 15vw;
+//   height: 100vh;
+//   width: 100vw;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   transition: all 0.1s linear;
+// }
+
+// .left {
+//   width: 75%;
+//   position: relative;
+// }
+
+// .App *{
+//   color: #1F2424;
+// }
+
+// footer p {
+//   margin: 15px 0 0 0;
+// }
+
+// header p {
+//   margin: 0;
+// }
+
+// .primary p {
+//   font-size: 50px;
+//   margin: 0 0 10px 0;
+// }
+
+// .primary .my-rotator{
+//   height: 61px;
+// }
+
+// .primary .my-rotator p{
+//   color: orangered;
+// }
+
+// #working {
+//   line-height: 35px;
+// }
+
+// #my-dash {
+//   width: 7vw;
+//   height: 7px;
+//   background-color: orangered;
+//   position: absolute;
+// }
+
+// @keyframes dash-slide {
+//   0% {
+//     height: 100px;
+//   }
+
+//   100% {
+//     height: 10px;
+//   }
+// }
+
+// /* Portrait */
+// @media only screen  
+//   and (max-width: 700px)
+//   and (orientation: portrait) {
+//     .App {
+//       font-size: 16px;
+//       padding: 10vh 12vw;
+//       justify-content: space-around;
+//     }
+
+//     .primary {
+//       flex-grow: 0.5
+//     }
+
+//     .primary p {
+//       font-size: 35px;
+//       margin: 0 0 10px 0;
+//     }
+
+//     .primary .my-rotator{
+//       height: 41px;
+//     }
+
+//     footer {
+//       flex-direction: column;
+//       justify-content: space-around;
+//       flex-grow: 1;
+//     }
+
+//     footer p {
+//       margin: 10px 0 0 0;
+//     }
+
+//     header {
+//       flex-grow: 1;
+//     }
+
+//     #working {
+//       line-height: 25px;
+//     }
+
+//     #my-dash {
+//       height: 6px;
+//       width: 15vw;
+//     }
+// }
+
+
+// /* dark mode */
+
+// .App.dark {
+//   background-color: #1F2424;
+// }
+
+// .App.dark *{
+//   color: #CFCECE;
+// }
+
+// .App footer *, .App.dark footer *{
+//   color: #a2a2a2;
+// }
+
+@import 'sass-exports/_utils.scss';
+@import 'sass-exports/_variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  padding: vGrid(1) hGrid(1);
+
+  .primary {
+    font-size: 2rem;
+
+    #my-name {
+      margin: 2vh 0;
+    }
+  }
+
+  #primary-rotator {
+    color: $highlight-color;
+    height: calc(50px + (76 - 50) * ((100vw - 800px) / (2560 - 800)));
+    padding: 10px 0;
+  }
+}
+
+.left-grid {
+  height: vGrid(6);
+  width: hGrid(3);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: space-between;
+
+  .left-grid-3 {
+    display: flex;
+
+    .account-links-1 {
+      width: hGrid(1);
+    }
+  }
+}
+
+.right-grid {
+  display: flex;
+  flex-direction: column;
+  margin-left: hGrid(4);
+  background-color: greenyellow;
+}

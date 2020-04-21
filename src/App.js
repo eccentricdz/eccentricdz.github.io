@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Link from './components/Link';
 import Rotator from './components/Rotator';
 import Toggle from './components/Toggle';
@@ -8,6 +8,7 @@ import Resume from './documents/resume.pdf';
 export default class App extends React.Component {
   constructor(props) {
     super(props)
+    // represents the color mode of the application
     this.state = {
       mode: "light"
     }
@@ -15,6 +16,7 @@ export default class App extends React.Component {
     this.toggleMode = this.toggleMode.bind(this)
   }
 
+  // toggle the dark mode
   toggleMode() {
     this.setState((state, props) => {
       const mode = state.mode === "light" ? "dark" : "light"
@@ -25,7 +27,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className={`${this.state.mode} App`}>
-        <header>
+        {/* <header>
           <section className="left">
             <Toggle handleToggle={this.toggleMode}></Toggle>
           </section>
@@ -50,7 +52,38 @@ export default class App extends React.Component {
               <Link href="https://www.linkedin.com/in/simplyrahul93/">Linkedin</Link>
             </section>
           </section>
-        </footer>
+        </footer> */}
+
+        <div className="left-grid">
+          <div className="left-grid-1">
+            <Toggle handleToggle={this.toggleMode}></Toggle>
+          </div>
+          <div className="left-grid-2">
+            <section className="primary">
+              <p id="my-name">Rahul Agarwal</p>
+              <Rotator elements={["Developer", "Designer", "Learner"]} id="primary-rotator"></Rotator>
+            </section>
+          </div>
+          <div className="left-grid-3">
+            <section className="account-links-1">
+              <Link href="https://www.behance.net/eccentricdz">Behance</Link>
+              <Link href="https://dribbble.com/eccentricdz">Dribbble</Link>
+              <Link href="https://github.com/eccentricdz">Github</Link>
+            </section>
+            <section className="account-links-2">
+              <Link href="https://www.instagram.com/simplyrahul93/">Instagram</Link>
+              <Link href="https://www.linkedin.com/in/simplyrahul93/">Linkedin</Link>
+              <Link href="https://soundcloud.com/rahul-agarwal-397883738">Sound Cloud</Link>
+            </section>
+          </div>
+          <div className="left-grid-4">
+            <Link href={Resume}>Resume</Link>
+          </div>
+        </div>
+        <div className="right-grid">
+          <div className="right-grid-1"></div>
+          <div className="right-grid-2"></div>
+        </div>
       </div>
     );
   }
