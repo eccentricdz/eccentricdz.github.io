@@ -1,4 +1,5 @@
-@import '../sass-exports/_variables.scss';
+@import '../sass-exports/variables';
+@import '../sass-exports/utils';
 
 .toggle-container {
   width: 55px;
@@ -17,7 +18,7 @@
     margin: 0 4px;
     background: $highlight-color;
     position: absolute;
-    transition: all 250ms ease-in-out;
+    @include animate(left);
   }
 
   &.left .toggle-switch {

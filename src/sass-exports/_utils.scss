@@ -5,3 +5,7 @@
 @function vGrid($units) {
     @return ($units / 8 * 100) * 1vh;
 }
+
+@mixin animate($property) {
+    transition: $property 250ms ease-in-out;
+}

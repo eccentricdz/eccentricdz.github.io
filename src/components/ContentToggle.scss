@@ -1,0 +1,68 @@
+@import '../sass-exports/variables';
+@import '../sass-exports/utils';
+
+.content-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $secondary-color;
+
+    .content-toggle-button {
+        cursor: pointer;
+        @include animate(color);
+    }
+
+    .content-toggle-divider {
+        order: 2;
+        height: 1px;
+        width: hGrid(2);
+        background-color: $secondary-color;
+
+        .content-toggle-shifter {
+            position: relative;
+            height: 100%;
+            width: 50%;
+            background-color: $highlight-color;
+            @include animate(left);
+            left: 0;
+        }
+    }
+
+    &.work-active {
+        .content-toggle-shifter {
+            left: 50%;
+        }
+
+        #work {
+            color: $highlight-color;
+        }
+    }
+
+    &.about-active {
+        #about {
+            color: $highlight-color;
+        }
+    }
+
+    #about {
+        order: 1;
+
+        &:hover {
+            // & ~ .content-toggle-divider .content-toggle-shifter{
+            //     left: 0;
+            // }
+            color: $highlight-color;
+        }
+    }
+
+    #work {
+        order: 3;
+
+        &:hover {
+            // & ~ .content-toggle-divider .content-toggle-shifter {
+            //     left: 50%;
+            // }
+            color: $highlight-color;
+        }
+    }
+}
