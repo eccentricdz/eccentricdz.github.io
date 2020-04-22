@@ -28,7 +28,7 @@ section.project {
         display: flex;
         flex-direction: column;
         top: 0;
-        background-color: white;
+        background-color: $light-base-color;
         padding: 2vw;
         font-size: 0.8rem;
         justify-content: space-between;
@@ -64,10 +64,15 @@ section.project {
 }
 
 @media only screen  
-  and (max-width: 700px)
+  and (max-width: 800px)
   and (orientation: portrait) {
     section.project {
         width: hGrid(9.8);
         height: hGrid(9.8);
+
+        .project-details {
+            font-size: 1rem;
+            padding: 3vh;
+        }
     }
 }

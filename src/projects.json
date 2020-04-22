@@ -7,10 +7,24 @@
         "tags": "Ideation, UI Design, Branding, Development"
     },
     {
+        "title": "Logofolio 2018",
+        "description": "A collection of branding work I undertook in the year 2018.",
+        "id": "logofolio-2018",
+        "url": "https://www.behance.net/gallery/74290269/Logofolio-2018",
+        "tags": "Branding, Graphic Design"
+    },
+    {
         "title": "Logofolio 2017",
         "description": "A collection of branding work I undertook in the year 2017.",
         "id": "logofolio-2017",
         "url": "https://www.behance.net/gallery/60376411/Logofolio-2017",
         "tags": "Branding, Graphic Design"
+    },
+    {
+        "title": "Watercolors",
+        "description": "A collection of my watercolor paintings I made towards the end of 2019.",
+        "id": "watercolor-2019",
+        "url": "https://www.behance.net/gallery/88938015/Water-Color-Exercise",
+        "tags": "Watercolors, Painting"
     }
 ]
