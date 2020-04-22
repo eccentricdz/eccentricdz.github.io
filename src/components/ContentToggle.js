@@ -6,7 +6,7 @@ export default class ContentToggle extends React.Component {
         super(props)
         // represents the content mode of the toggle component
         this.state = {
-          content: "about"
+          content: "work"
         }
       }
 

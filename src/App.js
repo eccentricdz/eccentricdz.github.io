@@ -5,6 +5,7 @@ import Rotator from './components/Rotator';
 import ContentToggle from './components/ContentToggle';
 import Toggle from './components/Toggle';
 import About from './components/About';
+import Work from './components/Work';
 import Resume from './documents/resume.pdf';
 
 export default class App extends React.Component {
@@ -13,7 +14,7 @@ export default class App extends React.Component {
     // represents the color mode of the application
     this.state = {
       mode: "light",
-      content: "about"
+      content: "work"
     }
 
     this.toggleMode = this.toggleMode.bind(this)
@@ -35,36 +36,10 @@ export default class App extends React.Component {
   render() {
     return (
       <div className={`${this.state.mode} App`}>
-        {/* <header>
-          <section className="left">
-            <Toggle handleToggle={this.toggleMode}></Toggle>
-          </section>
-          <section className="right">
-            <Link href={Resume}>Resume</Link>
-          </section>
-        </header>
-        <section className="primary">
-            <p id="my-name">Rahul Agarwal</p>
-            <Rotator elements={["Developer", "Designer", "Learner"]}></Rotator>
-        </section>
-        <footer>
-          <section className="left">
-            <p id="working">Currently working for Amazon <br /> in Seattle.</p>
-          </section>
-          <section className="right">
-            <section className="account-links">
-              <Link href="https://github.com/eccentricdz">Github</Link>
-              <Link href="https://www.behance.net/eccentricdz">Behance</Link>
-              <Link href="https://dribbble.com/eccentricdz">Dribbble</Link>
-              <Link href="https://www.instagram.com/simplyrahul93/">Instagram</Link>
-              <Link href="https://www.linkedin.com/in/simplyrahul93/">Linkedin</Link>
-            </section>
-          </section>
-        </footer> */}
-
         <div className="left-grid">
           <div className="left-grid-1">
             <Toggle handleToggle={this.toggleMode}></Toggle>
+            <Link href={Resume} id="resume-top">Resume</Link>
           </div>
           <div className="left-grid-2">
             <div className="left-grid-2-1">
@@ -86,7 +61,7 @@ export default class App extends React.Component {
               </section>
             </div>
             <div className="left-grid-2-3">
-              <Link href={Resume}>Resume</Link>
+              <Link href={Resume} id="resume-bottom">Resume</Link>
             </div>
           </div>
         </div>
@@ -97,7 +72,7 @@ export default class App extends React.Component {
           <div className="right-grid-2">
             {(this.state.content === "about")
                 ? <About></About>
-                : "work"
+                : <Work></Work>
             }
           </div>
         </div>

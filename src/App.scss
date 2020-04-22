@@ -137,6 +137,7 @@
 
 .App {
   display: flex;
+  width: hGrid(12);
   padding: vGrid(1) hGrid(1);
 
   .primary {
@@ -164,11 +165,17 @@
   justify-content: space-between;
 
   .left-grid-1 {
-    flex: 1;
+    flex: 0 vGrid(1.5);
+    display: flex;
+    justify-content: space-between;
+
+    #resume-top {
+      display: none;
+    }
   }
 
   .left-grid-2 {
-    flex: 3;
+    flex: 1;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -188,14 +195,75 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin-left: hGrid(4);
+  padding-left: hGrid(4);
   min-height: vGrid(6);
+  width: 100%;
 
   .right-grid-1 {
-    flex: 1 0 vGrid(1.5);
+    flex: 0 vGrid(1.5);
 }
 
   .right-grid-2 {
-      height: 3000px;
+    flex: 1;
   }
+}
+
+/* Portrait */
+@media only screen  
+  and (max-width: 700px)
+  and (orientation: portrait) {
+    $mobile-vertical-spacing: vGrid(0.7);
+
+    body, html {
+      font-size: 16px;
+      line-height: 1.5em;
+    }
+
+    .App {
+      flex-direction: column;
+      padding: $mobile-vertical-spacing hGrid(1.1);
+
+      .left-grid {
+        position: relative;
+        flex: 1 100%;
+        width: 100%;
+        justify-content: space-between;
+
+        .left-grid-1 {
+          flex: initial;
+          margin-bottom: $mobile-vertical-spacing;
+
+          #resume-top {
+            display: inherit;
+          }
+        }
+
+        .left-grid-2 {
+          justify-content: space-evenly;
+          flex: initial;
+
+          .left-grid-2-2 {
+            margin: $mobile-vertical-spacing 0;
+            .account-links-1 {
+              width: vGrid(1);
+              margin-right: 1vw;
+            }
+          }
+        }
+      }
+
+      .right-grid {
+        padding: 0;
+        min-height: auto;
+
+        .right-grid-1 {
+          flex: initial;
+          margin-bottom: $mobile-vertical-spacing;
+        }
+      }
+
+      #resume-bottom {
+        display: none;
+      }
+    }
 }
