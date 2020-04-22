@@ -166,6 +166,7 @@
   flex-direction: column;
   position: fixed;
   justify-content: space-between;
+  min-height: 450px;
 
   .left-grid-1 {
     flex: 0 vGrid(1.5);

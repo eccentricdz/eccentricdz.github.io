@@ -1,0 +1,12 @@
+.App.dark {
+    background-color: $primary-color;
+    color: $dark-primary-color;
+  
+    a {
+      color: $dark-primary-color;
+    }
+  
+    .project-details {
+      background-color: $primary-color;
+    }
+  }
