@@ -57,3 +57,14 @@
       }
     }
 }
+
+@media only screen  
+  and (max-height: 400px)
+  and (orientation: landscape) {
+    .App {
+        .left-grid {
+            position: absolute;
+            min-height: 350px;
+        }
+    }
+}
