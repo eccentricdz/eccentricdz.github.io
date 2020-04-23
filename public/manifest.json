@@ -1,0 +1,15 @@
+{
+    "short_name": "Rahul Agarwal",
+    "name": "Rahul Agarwal - Portfolio",
+    "icons": [
+      {
+        "src": "favicon.ico",
+        "sizes": "48x48",
+        "type": "image/x-icon"
+      }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "theme_color": "#ff4500",
+    "background_color": "#ffffff"
+  }
