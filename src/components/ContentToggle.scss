@@ -7,6 +7,8 @@
     align-items: center;
     color: $secondary-color;
 
+    & > div { flex: 1 };
+
     .content-toggle-button {
         cursor: pointer;
         @include animate(color);
@@ -48,20 +50,14 @@
         order: 1;
 
         &:hover {
-            // & ~ .content-toggle-divider .content-toggle-shifter{
-            //     left: 0;
-            // }
             color: $highlight-color;
         }
     }
 
     #work {
         order: 3;
-
+        text-align: right;
         &:hover {
-            // & ~ .content-toggle-divider .content-toggle-shifter {
-            //     left: 50%;
-            // }
             color: $highlight-color;
         }
     }
