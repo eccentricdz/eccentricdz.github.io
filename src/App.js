@@ -37,6 +37,11 @@ export default class App extends React.Component {
     return (
       <div className={`${this.state.mode} App`}>
         <div className="left-grid">
+          {/* grid lines */}
+          <div className="grid-lines" id="left-grid-line-1"></div>
+          <div className="grid-lines" id="left-grid-line-2"></div>
+          {/* grid lines */}
+
           <div className="left-grid-1">
             <Toggle handleToggle={this.toggleMode}></Toggle>
             <Link href={Resume} id="resume-top">Resume</Link>
@@ -57,7 +62,7 @@ export default class App extends React.Component {
               <section className="account-links-2">
                 <Link href="https://www.instagram.com/simplyrahul93/">Instagram</Link>
                 <Link href="https://www.linkedin.com/in/simplyrahul93/">Linkedin</Link>
-                <Link href="https://soundcloud.com/rahul-agarwal-397883738">Sound Cloud</Link>
+                <Link href="https://soundcloud.com/rahul-agarwal-397883738">Soundcloud</Link>
               </section>
             </div>
             <div className="left-grid-2-3">
@@ -66,6 +71,12 @@ export default class App extends React.Component {
           </div>
         </div>
         <div className="right-grid">
+          {/* grid lines */}
+          <div className="grid-lines" id="right-grid-line-1"></div>
+          <div className="grid-lines" id="right-grid-line-2"></div>
+          <div className="grid-lines" id="right-grid-line-3"></div>
+          {/* grid lines */}
+
           <div className="right-grid-1">
             <ContentToggle contentToggleHandler={this.contentToggleHandler}></ContentToggle>
           </div>

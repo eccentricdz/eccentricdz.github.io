@@ -2,77 +2,80 @@
 @import "../sass-exports/utils";
 
 section.project {
-    height: hGrid(3);
-    width: hGrid(3);
-    position: relative;
+  height: hGrid(3);
+  width: hGrid(3);
+  position: relative;
 
-    a.project-link {
-        display: block;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  a.project-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        img {
-            height: 100%;
-            object-fit: cover;
-        }
+    img {
+      height: 100%;
+      object-fit: cover;
     }
+  }
 
-    .project-details {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        top: 0;
-        background-color: $light-base-color;
-        padding: 2vw;
-        font-size: 0.8rem;
-        justify-content: space-between;
-        pointer-events: none;
-        opacity: 0;
-        @include animate(opacity);
+  .project-details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    background-color: $light-base-color;
+    padding: 2vw;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    pointer-events: none;
+    opacity: 0;
+    @include animate(opacity);
 
-        .project-details-top {
-            flex: 1;
+    .project-details-top {
+      flex: 1;
 
-            .project-title {
-                font-weight: bold;
-                color: $highlight-color;
-                margin-bottom: 2vh;
-            }
-    
-            .project-divider {
-                height: 3px;
-                width: 2vw;
-                background-color: $highlight-color;
-                margin-bottom: 2vh;
-            }
-    
-            .project-description {
-                color: $secondary-color;
-            }
-        }
+      .project-title {
+        font-weight: bold;
+        color: $highlight-color;
+        margin-bottom: 1vw;
+      }
+
+      .project-divider {
+        height: 3px;
+        width: 2vw;
+        background-color: $highlight-color;
+        margin-bottom: 1vw;
+      }
+
+      .project-description {
+        color: $secondary-color;
+      }
     }
+  }
 
-    &:hover .project-details {
-        opacity: 1;
-    }
+  &:hover .project-details {
+    opacity: 1;
+  }
 }
 
-@media only screen  
-  and (max-width: 800px)
-  and (orientation: portrait) {
-    section.project {
-        width: hGrid(9.8);
-        height: hGrid(9.8);
-
-        .project-details {
-            font-size: 1rem;
-            padding: 3vh;
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  section.project {
+    width: hGrid(9.8);
+    height: hGrid(9.8);
+    .project-details {
+      font-size: 1rem;
+      padding: 5vh;
+      .project-details-top {
+        .project-title,
+        .project-divider {
+          margin-bottom: 2vh;
         }
+      }
     }
+  }
 }

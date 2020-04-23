@@ -7,10 +7,11 @@ export default class Work extends React.Component {
     render() {
         return (
             <section className="work">
-                { projects.map((project) => {
+                { projects.map((project, index) => {
                     const { id, description, title, url, tags } = project;
                     return (
                         <Project
+                        key={index}
                         id={id}
                         title={title}
                         description={description}

@@ -66,7 +66,7 @@
 // }
 
 // /* Portrait */
-// @media only screen  
+// @media only screen
 //   and (max-width: 700px)
 //   and (orientation: portrait) {
 //     .App {
@@ -112,7 +112,6 @@
 //     }
 // }
 
-
 // /* dark mode */
 
 // .App.dark {
@@ -127,8 +126,8 @@
 //   color: #a2a2a2;
 // }
 
-@import 'sass-exports/_utils.scss';
-@import 'sass-exports/_variables.scss';
+@import "sass-exports/_utils.scss";
+@import "sass-exports/_variables.scss";
 
 * {
   margin: 0;
@@ -159,6 +158,15 @@
   }
 }
 
+div.grid-lines {
+  position: fixed;
+  height: 100vh;
+  width: 1px;
+  background: $light-grid-color;
+  top: 0;
+  z-index: -1;
+}
+
 .left-grid {
   height: vGrid(6);
   width: hGrid(3);
@@ -166,6 +174,7 @@
   flex-direction: column;
   position: fixed;
   justify-content: space-between;
+  z-index: 2;
 
   .left-grid-1 {
     flex: 0 vGrid(1.5);
@@ -185,12 +194,15 @@
 
     .left-grid-2-2 {
       display: flex;
-  
-      .account-links-1 {
-        width: hGrid(1);
-        margin-right: 1vw;
+
+      & > section {
+        flex: 1;
       }
     }
+  }
+
+  div#left-grid-line-2 {
+    align-self: center;
   }
 }
 
@@ -201,15 +213,24 @@
   padding-left: hGrid(4);
   min-height: vGrid(6);
   width: 100%;
+  z-index: 1;
 
   .right-grid-1 {
     flex: 0 vGrid(1.5);
-}
+  }
 
   .right-grid-2 {
     flex: 1;
   }
+
+  div#right-grid-line-2 {
+    align-self: center;
+  }
+
+  div#right-grid-line-3 {
+    align-self: flex-end;
+  }
 }
 
-@import 'App_Mobile';
-@import 'App_Dark';
+@import "App_Mobile";
+@import "App_Dark";
