@@ -1,5 +1,12 @@
 [
     {
+        "title": "Digiup",
+        "description": "Digiup is a digital content platform based out of Greece that offers digital up-haul services for businesses like hotels / restaurants and more. I was commissioned to design the identity for the brand.",
+        "id": "digiup",
+        "url": "https://www.behance.net/gallery/95918745/Identity-Design-for-Digiup",
+        "tags": "Branding, Graphic Design, Creative Direction"
+    },
+    {
         "title": "Sound Stash",
         "description": "A React app that enables it's users to search, play and download songs.",
         "id": "sound-stash",
