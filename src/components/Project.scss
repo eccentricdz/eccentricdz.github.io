@@ -30,7 +30,8 @@ section.project {
     top: 0;
     background-color: $light-base-color;
     padding: 2vw;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
     justify-content: space-between;
     pointer-events: none;
     opacity: 0;
@@ -76,6 +77,7 @@ section.project {
     height: hGrid(9.8);
     .project-details {
       font-size: 1rem;
+      line-height: inherit;
       padding: 5vh;
       .project-details-top {
         .project-title,

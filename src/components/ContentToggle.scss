@@ -30,33 +30,32 @@
         }
     }
 
-    &.work-active {
+    &.about-active {
         .content-toggle-shifter {
             left: 50%;
         }
 
-        #work {
-            color: $highlight-color;
-        }
-    }
-
-    &.about-active {
         #about {
             color: $highlight-color;
         }
     }
 
-    #about {
-        order: 1;
+    &.work-active {
+        #work {
+            color: $highlight-color;
+        }
+    }
 
+    #about {
+        text-align: right;
+        order: 3;
         &:hover {
             color: $highlight-color;
         }
     }
 
     #work {
-        order: 3;
-        text-align: right;
+        order: 1;
         &:hover {
             color: $highlight-color;
         }
