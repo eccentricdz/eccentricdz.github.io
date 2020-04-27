@@ -4,7 +4,7 @@ import './Project.scss'
 export default class Project extends React.Component {
     render() {
         return (
-            <section className="project" id={this.props.id}>
+            <section className="project" id={this.props.id} onClick={() => this.props.clickHandler(this.props.id)}>
                 <a className="project-link" href={this.props.url} rel="noopener noreferrer" target="_blank">
                     <img src={`${process.env.PUBLIC_URL}/project-images/${this.props.id}.jpg`} alt={this.props.title}></img>
                 </a>

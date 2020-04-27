@@ -17,6 +17,7 @@ export default class Work extends React.Component {
                         description={description}
                         tags={tags}
                         url={url}
+                        clickHandler={(id) => this.props.clickHandler(id)}
                         ></Project>
                     )
                 }) }

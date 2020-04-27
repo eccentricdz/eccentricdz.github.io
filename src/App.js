@@ -7,6 +7,11 @@ import Toggle from './components/Toggle';
 import About from './components/About';
 import Work from './components/Work';
 import Resume from './documents/resume.pdf';
+import ReactGA from 'react-ga';
+
+export function logReactEvent(eventData) {
+  ReactGA.event(eventData)
+} 
 
 export default class App extends React.Component {
   constructor(props) {
@@ -19,18 +24,36 @@ export default class App extends React.Component {
 
     this.toggleMode = this.toggleMode.bind(this)
     this.contentToggleHandler = this.contentToggleHandler.bind(this)
+    this.logUserAction = this.logUserAction.bind(this)
+  }
+
+  initializeReactGA() {
+    ReactGA.initialize('UA-104943545-2');
+    ReactGA.pageview('/homepage');
+  }
+
+  logUserAction(action, label) {
+    logReactEvent({
+      category: "User Action", action, label
+    })
   }
 
   // toggle the dark mode
   toggleMode() {
     this.setState((state, props) => {
       const mode = state.mode === "light" ? "dark" : "light"
+      this.logUserAction('Dark Mode Toggle', mode);
       return { mode }
     })
   }
 
   contentToggleHandler(content) {
+    this.logUserAction('Content Toggle', content);
     this.setState({ content })
+  }
+
+  componentDidMount() {
+    this.initializeReactGA();
   }
 
   render() {
@@ -55,14 +78,14 @@ export default class App extends React.Component {
             </div>
             <div className="left-grid-2-2">
               <section className="account-links-1">
-                <Link href="https://www.behance.net/eccentricdz">Behance</Link>
-                <Link href="https://dribbble.com/eccentricdz">Dribbble</Link>
-                <Link href="https://github.com/eccentricdz">Github</Link>
+                <Link href="https://www.behance.net/eccentricdz" id="behance">Behance</Link>
+                <Link href="https://dribbble.com/eccentricdz" id="dribbble">Dribbble</Link>
+                <Link href="https://github.com/eccentricdz" id="github">Github</Link>
               </section>
               <section className="account-links-2">
-                <Link href="https://www.instagram.com/simplyrahul93/">Instagram</Link>
-                <Link href="https://www.linkedin.com/in/simplyrahul93/">Linkedin</Link>
-                <Link href="https://soundcloud.com/rahul-agarwal-397883738">Soundcloud</Link>
+                <Link href="https://www.instagram.com/simplyrahul93/" id="instagram">Instagram</Link>
+                <Link href="https://www.linkedin.com/in/simplyrahul93/" id="linkedin">Linkedin</Link>
+                <Link href="https://soundcloud.com/rahul-agarwal-397883738" id="soundcloud">Soundcloud</Link>
               </section>
             </div>
             <div className="left-grid-2-3">
@@ -83,7 +106,7 @@ export default class App extends React.Component {
           <div className="right-grid-2">
             {(this.state.content === "about")
                 ? <About></About>
-                : <Work></Work>
+                : <Work clickHandler={(id) => this.logUserAction("Project Click", id)}></Work>
             }
           </div>
         </div>

@@ -6,3 +6,11 @@
         color: $secondary-color;
     }
 }
+
+.App.dark {
+    .about {
+        a {
+            color: $secondary-color;
+        }
+    }
+}
