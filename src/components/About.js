@@ -6,7 +6,7 @@ export default class About extends React.Component {
         return (
             <section className="about">
                 <p>
-                Hello <br /> <br />
+                Hello! <br /> <br />
 
                 I am a designer / developer hybrid and enjoy crafting functional and aesthetic digital solutions, by means of design and code.<br /> <br />
 

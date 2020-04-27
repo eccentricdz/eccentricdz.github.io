@@ -6,7 +6,7 @@ export default class Project extends React.Component {
         return (
             <section className="project" id={this.props.id} onClick={() => this.props.clickHandler(this.props.id)}>
                 <a className="project-link" href={this.props.url} rel="noopener noreferrer" target="_blank">
-                    <img src={`${process.env.PUBLIC_URL}/project-images/${this.props.id}.jpg`} alt={this.props.title}></img>
+                    <img src={`${process.env.PUBLIC_URL}/project-images/${this.props.id}.${this.props.imageExtension}`} alt={this.props.title}></img>
                 </a>
                 <div className="project-details">
                     <div className="project-details-top">

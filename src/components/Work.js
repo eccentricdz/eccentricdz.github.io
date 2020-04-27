@@ -8,7 +8,7 @@ export default class Work extends React.Component {
         return (
             <section className="work">
                 { projects.map((project, index) => {
-                    const { id, description, title, url, tags } = project;
+                    const { id, description, title, url, tags, extension } = project;
                     return (
                         <Project
                         key={index}
@@ -17,6 +17,7 @@ export default class Work extends React.Component {
                         description={description}
                         tags={tags}
                         url={url}
+                        imageExtension={ extension == undefined ? "jpg" : extension }
                         clickHandler={(id) => this.props.clickHandler(id)}
                         ></Project>
                     )
