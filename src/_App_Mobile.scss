@@ -1,9 +1,10 @@
+$mobile-vertical-spacing: vGrid(0.7);
+$mobile-horizontal-spacing: hGrid(1.1);
+
 /* Portrait */
 @media only screen  
   and (max-width: 800px)
   and (orientation: portrait) {
-    $mobile-vertical-spacing: vGrid(0.7);
-
     body, html {
       font-size: 16px;
       line-height: 1.5em;
@@ -11,7 +12,7 @@
 
     .App {
       flex-direction: column;
-      padding: $mobile-vertical-spacing hGrid(1.1);
+      padding: $mobile-vertical-spacing $mobile-horizontal-spacing;
 
       .left-grid {
         position: relative;
@@ -49,6 +50,11 @@
         .right-grid-1 {
           flex: initial;
           margin-bottom: $mobile-vertical-spacing;
+        }
+
+        footer {
+          left: -$mobile-horizontal-spacing;
+          bottom: -$mobile-vertical-spacing;
         }
       }
 

@@ -13,4 +13,13 @@
     div.grid-lines {
         background: $dark-grid-color;
       }
+
+      .right-grid {
+        footer {
+          background-color: $dark-grid-color;
+          a {
+            color: $secondary-color;
+          }
+        }
+      }
   }

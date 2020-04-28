@@ -89,6 +89,7 @@ div.grid-lines {
   min-height: vGrid(6);
   width: 100%;
   z-index: 1;
+  position: relative;
 
   .right-grid-1 {
     flex: 0 vGrid(1.5);
@@ -96,6 +97,7 @@ div.grid-lines {
 
   .right-grid-2 {
     flex: 1;
+    margin-bottom: vGrid(1);
   }
 
   div#right-grid-line-2 {
@@ -104,6 +106,23 @@ div.grid-lines {
 
   div#right-grid-line-3 {
     align-self: flex-end;
+  }
+
+  footer {
+    position: absolute;
+    bottom: -1 * vGrid(1);
+    width: 100vw;
+    background: $light-grid-color;
+    padding: 2px hGrid(1);
+    left: -1 * hGrid(1);
+    font-size: 0.6rem;
+    z-index: 10;
+    text-align: center;
+    color: $secondary-color;
+
+    a {
+      color: $secondary-color;
+    }
   }
 }
 

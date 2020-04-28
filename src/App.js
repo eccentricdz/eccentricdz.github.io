@@ -109,6 +109,11 @@ export default class App extends React.Component {
                 : <Work clickHandler={(id) => this.logUserAction("Project Click", id)}></Work>
             }
           </div>
+
+          <footer>
+            {/* <div className="left">Built with ❤ during the COVID-19 lockdown.</div> */}
+            Stay home, <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" target="_blank" rel="noopener noreferrer">stay informed,</a> stay safe!
+          </footer>
         </div>
       </div>
     );
