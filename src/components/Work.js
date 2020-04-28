@@ -19,7 +19,7 @@ export default class Work extends React.Component {
                         description={description}
                         tags={tags}
                         url={url}
-                        imageExtension={ extension == undefined ? "jpg" : extension }
+                        imageExtension={ extension === undefined ? "jpg" : extension }
                         clickHandler={(id) => this.props.clickHandler(id)}
                         ></Project>
                     )
