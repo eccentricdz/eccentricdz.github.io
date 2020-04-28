@@ -1,20 +1,22 @@
+@import '../sass-exports/variables';
+
 .curtain {
     position: absolute;
     height: 100vh;
-    background: orangered;
+    background: $highlight-color;
     top: 0;
     z-index: 5;
 
     &.open {
         width: 100%;
         right: 0;
-        animation: curtainopen 500ms ease-in-out 50ms forwards;
+        animation: curtainopen 500ms ease-in-out 100ms forwards;
     }
 
     &.close {
         width: 0;
         left: 0;
-        animation: curtainclose 500ms ease-in-out 50ms forwards;
+        animation: curtainclose 500ms ease-in-out forwards;
     }
 }
 
