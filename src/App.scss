@@ -98,6 +98,7 @@ div.grid-lines {
   .right-grid-2 {
     flex: 1;
     margin-bottom: vGrid(1);
+    position: relative;
   }
 
   div#right-grid-line-2 {

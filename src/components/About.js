@@ -1,10 +1,12 @@
 import React from 'react';
 import './About.scss'
+import Curtain from './Curtain';
 
 export default class About extends React.Component {
     render() {
         return (
             <section className="about">
+                <Curtain></Curtain>   
                 <p>
                 Hello! <br /> <br />
 

@@ -6,6 +6,7 @@ import ContentToggle from './components/ContentToggle';
 import Toggle from './components/Toggle';
 import About from './components/About';
 import Work from './components/Work';
+import Curtain from './components/Curtain';
 import Resume from './documents/resume.pdf';
 import ReactGA from 'react-ga';
 
@@ -19,7 +20,8 @@ export default class App extends React.Component {
     // represents the color mode of the application
     this.state = {
       mode: "light",
-      content: "work"
+      content: "work",
+      showCurtain: false
     }
 
     this.toggleMode = this.toggleMode.bind(this)
@@ -48,8 +50,11 @@ export default class App extends React.Component {
   }
 
   contentToggleHandler(content) {
-    this.logUserAction('Content Toggle', content);
-    this.setState({ content })
+    this.setState({showCurtain: true})
+    setTimeout(() => {
+      this.logUserAction('Content Toggle', content);
+      this.setState({ content, showCurtain: false })
+    }, 500)
   }
 
   componentDidMount() {
@@ -104,6 +109,7 @@ export default class App extends React.Component {
             <ContentToggle contentToggleHandler={this.contentToggleHandler}></ContentToggle>
           </div>
           <div className="right-grid-2">
+            {this.state.showCurtain ? <Curtain shouldClose></Curtain> : null}
             {(this.state.content === "about")
                 ? <About></About>
                 : <Work clickHandler={(id) => this.logUserAction("Project Click", id)}></Work>
