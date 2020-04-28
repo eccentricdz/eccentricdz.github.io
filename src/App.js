@@ -106,7 +106,7 @@ export default class App extends React.Component {
           {/* grid lines */}
 
           <div className="right-grid-1">
-            <ContentToggle contentToggleHandler={this.contentToggleHandler}></ContentToggle>
+            <ContentToggle initialContent={this.state.content} contentToggleHandler={this.contentToggleHandler}></ContentToggle>
           </div>
           <div className="right-grid-2">
             {this.state.showCurtain ? <Curtain shouldClose></Curtain> : null}

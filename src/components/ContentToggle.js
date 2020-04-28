@@ -6,13 +6,17 @@ export default class ContentToggle extends React.Component {
         super(props)
         // represents the content mode of the toggle component
         this.state = {
-          content: "work"
+          content: this.props.initialContent
         }
       }
 
       setContent(content) {
-        this.setState({ content })
-        this.props.contentToggleHandler(content);
+        this.setState((state) => {
+          if (state.content !== content) {
+            this.props.contentToggleHandler(content);
+            return { content }
+          }
+        })
       }
 
       render() {
