@@ -1,5 +1,12 @@
 [
     {
+        "title": "Online Portfolio",
+        "description": "I built my last portfolio site when I was graduating college and wanted to update it to something that is more representative of my work. The project showcases the design reasoning & process involved and talks briefly about the development",
+        "id": "portfolio",
+        "url": "https://www.behance.net/gallery/96064899/Online-Portfolio-2020",
+        "tags": "UI / UX, Web Design, Web Development"
+    },
+    {
         "title": "Digiup",
         "description": "Digiup is a digital content platform based out of Greece that offers digital up-haul services for businesses like hotels / restaurants and more. I was commissioned to design the identity for the brand.",
         "id": "digiup",
