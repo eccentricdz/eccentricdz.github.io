@@ -88,7 +88,7 @@ export default class App extends React.Component {
                 <Link href="https://github.com/eccentricdz" id="github">Github</Link>
               </section>
               <section className="account-links-2">
-                <Link href="https://www.instagram.com/simplyrahul93/" id="instagram">Instagram</Link>
+                <Link href="https://www.instagram.com/createdbyrahul/" id="instagram">Instagram</Link>
                 <Link href="https://www.linkedin.com/in/simplyrahul93/" id="linkedin">Linkedin</Link>
                 <Link href="https://soundcloud.com/rahul-agarwal-397883738" id="soundcloud">Soundcloud</Link>
               </section>

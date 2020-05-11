@@ -14,11 +14,11 @@
         "tags": "Branding, Graphic Design, Creative Direction"
     },
     {
-        "title": "Sound Stash",
-        "description": "A React app that enables it's users to search, play and download songs.",
-        "id": "sound-stash",
-        "url": "https://www.behance.net/gallery/95341767/Sound-Stash",
-        "tags": "Ideation, UI Design, Branding, Development"
+        "title": "Logofolio 2018",
+        "description": "A collection of branding work I undertook in the year 2018.",
+        "id": "logofolio-2018",
+        "url": "https://www.behance.net/gallery/74290269/Logofolio-2018",
+        "tags": "Branding, Graphic Design"
     },
     {
         "title": "Learning Motion Design",
@@ -29,10 +29,17 @@
         "extension": "gif"
     },
     {
-        "title": "Logofolio 2018",
-        "description": "A collection of branding work I undertook in the year 2018.",
-        "id": "logofolio-2018",
-        "url": "https://www.behance.net/gallery/74290269/Logofolio-2018",
+        "title": "Sound Stash",
+        "description": "A React app that enables it's users to search, play and download songs.",
+        "id": "sound-stash",
+        "url": "https://www.behance.net/gallery/95341767/Sound-Stash",
+        "tags": "Ideation, UI Design, Branding, Development"
+    },
+    {
+        "title": "Logofolio 2017",
+        "description": "A collection of branding work I undertook in the year 2017.",
+        "id": "logofolio-2017",
+        "url": "https://www.behance.net/gallery/60376411/Logofolio-2017",
         "tags": "Branding, Graphic Design"
     },
     {
@@ -43,10 +50,10 @@
         "tags": "Watercolors, Painting"
     },
     {
-        "title": "Logofolio 2017",
-        "description": "A collection of branding work I undertook in the year 2017.",
-        "id": "logofolio-2017",
-        "url": "https://www.behance.net/gallery/60376411/Logofolio-2017",
+        "title": "Logofolio 2016",
+        "description": "A collection of branding work I undertook in the year 2016.",
+        "id": "logofolio-2016",
+        "url": "https://www.behance.net/gallery/43447039/Logofolio-2016",
         "tags": "Branding, Graphic Design"
     },
     {
