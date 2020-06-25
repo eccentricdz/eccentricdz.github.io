@@ -19,7 +19,6 @@ export default class App extends React.Component {
     super(props)
     // represents the color mode of the application
     this.state = {
-      mode: "light",
       content: "work",
       showCurtain: false
     }
@@ -27,6 +26,19 @@ export default class App extends React.Component {
     this.toggleMode = this.toggleMode.bind(this)
     this.contentToggleHandler = this.contentToggleHandler.bind(this)
     this.logUserAction = this.logUserAction.bind(this)
+  }
+
+  setInitialColorMode() {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      this.setState({
+        mode: "dark"
+      })
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+      const mode = e.matches ? "dark" : "light";
+      this.setState({ mode })
+    });
   }
 
   initializeReactGA() {
@@ -59,6 +71,10 @@ export default class App extends React.Component {
 
   componentDidMount() {
     this.initializeReactGA();
+  }
+
+  componentWillMount() {
+    this.setInitialColorMode();
   }
 
   render() {

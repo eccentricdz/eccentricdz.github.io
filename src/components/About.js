@@ -16,8 +16,6 @@ export default class About extends React.Component {
 
                 After graduating with a bachelor’s degree in Computer Science, I joined Amazon, where I am focusing on design systems and tooling for front-end development.<br /> <br />
 
-                Currently based in Seattle, when I am not hiking one of the many wonderful trails this place has to offer, I enjoy playing my ukulele or painting watercolors!<br /> <br />
-
                 Hit me up, if you’d like to work on a project with me or just say hello,<br />
                 <a className="about-link" href="mailto:this.agarwal@gmail.com">this.agarwal@gmail.com</a>
                 </p>
