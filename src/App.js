@@ -7,7 +7,7 @@ import Toggle from './components/Toggle';
 import About from './components/About';
 import Work from './components/Work';
 import Curtain from './components/Curtain';
-import Resume from './documents/resume.pdf';
+import Resume from './documents/resume-2020.pdf';
 import ReactGA from 'react-ga';
 
 export function logReactEvent(eventData) {
