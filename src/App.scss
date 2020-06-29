@@ -127,5 +127,20 @@ div.grid-lines {
   }
 }
 
+// Custom scrollbars
+::-webkit-scrollbar {
+  width: 8px;
+  position: absolute;
+}
+
+::-webkit-scrollbar-track {
+  background: $light-base-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary-color; 
+}
+
 @import "App_Mobile";
 @import "App_Dark";

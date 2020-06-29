@@ -28,16 +28,24 @@ export default class App extends React.Component {
     this.logUserAction = this.logUserAction.bind(this)
   }
 
+  assignColorModeToBody(currentColorMode) {
+    if(currentColorMode == "dark") document.body.classList.add("dark")
+    else document.body.classList.remove("dark")
+  }
+
   setInitialColorMode() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       this.setState({
         mode: "dark"
       })
+      this.assignColorModeToBody("dark");
     }
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
       const mode = e.matches ? "dark" : "light";
       this.setState({ mode })
+
+      this.assignColorModeToBody(mode);
     });
   }
 
@@ -55,7 +63,8 @@ export default class App extends React.Component {
   // toggle the dark mode
   toggleMode() {
     this.setState((state, props) => {
-      const mode = state.mode === "light" ? "dark" : "light"
+      const mode = state.mode === "light" ? "dark" : "light";
+      this.assignColorModeToBody(mode);
       this.logUserAction('Dark Mode Toggle', mode);
       return { mode }
     })

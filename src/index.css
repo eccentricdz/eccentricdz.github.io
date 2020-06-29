@@ -10,4 +10,5 @@ body, html {
   font-family: Helvetica, 'Roboto', sans-serif;
   font-size: calc(14px + (32 - 14) * ((100vw - 800px) / (2560 - 800)));
   line-height: calc(1.5em + (5 - 1.5) * ((100vw - 800px) / (2560 - 800)));
+  overflow-x: hidden;
 }

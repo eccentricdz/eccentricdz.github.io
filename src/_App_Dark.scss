@@ -23,3 +23,13 @@
         }
       }
   }
+
+body.dark {
+  &::-webkit-scrollbar-track {
+    background: $primary-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $dark-grid-color; 
+  }
+}
