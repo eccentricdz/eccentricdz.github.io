@@ -14,18 +14,25 @@
         "tags": "UI / UX, Web Design, Web Development, Branding"
     },
     {
-        "title": "Logofolio 2019 / 2020",
-        "description": "A collection of logos I designed between 2019 - 2020.",
-        "id": "logofolio-1920",
-        "url": "https://www.behance.net/gallery/99216673/Logofolio-2019-2020",
-        "tags": "Branding, Graphic Design"
-    },
-    {
         "title": "Digiup",
         "description": "Digiup is a digital content platform based out of Greece that offers digital up-haul services for businesses like hotels / restaurants and more. I was commissioned to design the identity for the brand.",
         "id": "digiup",
         "url": "https://www.behance.net/gallery/95918745/Identity-Design-for-Digiup",
         "tags": "Branding, Graphic Design, Creative Direction"
+    },
+    {
+        "title": "Watercolor Portraits",
+        "description": "I picked up this hobby during the ongoing lockdown, trying to learn how to paint watercolor portraits. This is a collection of some of my paintings.",
+        "id": "watercolor-portraits",
+        "url": "https://www.behance.net/gallery/101867293/Watercolor-Portraits",
+        "tags": "Watercolors, Painting, Portraits"
+    },
+    {
+        "title": "Logofolio 2019 / 2020",
+        "description": "A collection of logos I designed between 2019 - 2020.",
+        "id": "logofolio-1920",
+        "url": "https://www.behance.net/gallery/99216673/Logofolio-2019-2020",
+        "tags": "Branding, Graphic Design"
     },
     {
         "title": "Learning Motion Design",
@@ -34,6 +41,13 @@
         "url": "https://dribbble.com/eccentricdz/collections/2036293-Learning-Motion-Design",
         "tags": "Motion Design, Animation",
         "extension": "gif"
+    },
+    {
+        "title": "Sound Stash",
+        "description": "A React app that enables it's users to search, play and download songs.",
+        "id": "sound-stash",
+        "url": "https://www.behance.net/gallery/95341767/Sound-Stash",
+        "tags": "Ideation, UI Design, Branding, Development"
     },
     {
         "title": "Watercolors",
@@ -48,13 +62,6 @@
         "id": "logofolio-2018",
         "url": "https://www.behance.net/gallery/74290269/Logofolio-2018",
         "tags": "Branding, Graphic Design"
-    },
-    {
-        "title": "Sound Stash",
-        "description": "A React app that enables it's users to search, play and download songs.",
-        "id": "sound-stash",
-        "url": "https://www.behance.net/gallery/95341767/Sound-Stash",
-        "tags": "Ideation, UI Design, Branding, Development"
     },
     {
         "title": "Logofolio 2017",
