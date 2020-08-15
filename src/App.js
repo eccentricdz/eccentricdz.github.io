@@ -29,7 +29,7 @@ export default class App extends React.Component {
   }
 
   assignColorModeToBody(currentColorMode) {
-    if(currentColorMode == "dark") document.body.classList.add("dark")
+    if(currentColorMode === "dark") document.body.classList.add("dark")
     else document.body.classList.remove("dark")
   }
 
