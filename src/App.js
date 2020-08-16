@@ -12,7 +12,7 @@ import ReactGA from 'react-ga';
 
 export function logReactEvent(eventData) {
   ReactGA.event(eventData)
-} 
+}
 
 export default class App extends React.Component {
   constructor(props) {
@@ -29,7 +29,7 @@ export default class App extends React.Component {
   }
 
   assignColorModeToBody(currentColorMode) {
-    if(currentColorMode === "dark") document.body.classList.add("dark")
+    if (currentColorMode === "dark") document.body.classList.add("dark")
     else document.body.classList.remove("dark")
   }
 
@@ -39,14 +39,16 @@ export default class App extends React.Component {
         mode: "dark"
       })
       this.assignColorModeToBody("dark");
+
+      if (window.matchMedia('(prefers-color-scheme: dark)') && window.matchMedia('(prefers-color-scheme: dark)').addEventListener) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          const mode = e.matches ? "dark" : "light";
+          this.setState({ mode })
+
+          this.assignColorModeToBody(mode);
+        });
+      }
     }
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-      const mode = e.matches ? "dark" : "light";
-      this.setState({ mode })
-
-      this.assignColorModeToBody(mode);
-    });
   }
 
   initializeReactGA() {
@@ -71,7 +73,7 @@ export default class App extends React.Component {
   }
 
   contentToggleHandler(content) {
-    this.setState({showCurtain: true})
+    this.setState({ showCurtain: true })
     setTimeout(() => {
       this.logUserAction('Content Toggle', content);
       this.setState({ content, showCurtain: false })
@@ -136,8 +138,8 @@ export default class App extends React.Component {
           <div className="right-grid-2">
             {this.state.showCurtain ? <Curtain shouldClose></Curtain> : null}
             {(this.state.content === "about")
-                ? <About></About>
-                : <Work clickHandler={(id) => this.logUserAction("Project Click", id)}></Work>
+              ? <About></About>
+              : <Work clickHandler={(id) => this.logUserAction("Project Click", id)}></Work>
             }
           </div>
 
