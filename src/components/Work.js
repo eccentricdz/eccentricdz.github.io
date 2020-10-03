@@ -6,7 +6,7 @@ import SkeletonLoaders from './SkeletonLoaders';
 import projectsArray from '../projects.json';
 
 const Work = () => {
-    const pageSize = 4;
+    const pageSize = 8;
 
     const projectReducer = (state, action) => {
         switch (action.type) {
