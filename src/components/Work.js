@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import './Work.scss'
-import Project from './Project';
+import Project, { ProjectSkeleton } from './Project';
 import Curtain from './Curtain';
 import projects from '../projects.json';
 
@@ -9,6 +9,14 @@ export default class Work extends React.Component {
         return (
             <section className="work">
                 <Curtain></Curtain>
+                <Suspense fallback={
+                    <div className="skeleton-container">
+                        <ProjectSkeleton></ProjectSkeleton>
+                        <ProjectSkeleton></ProjectSkeleton>
+                        <ProjectSkeleton></ProjectSkeleton>
+                        <ProjectSkeleton></ProjectSkeleton>
+                    </div>
+                }>
                 { projects.map((project, index) => {
                     const { id, description, title, url, tags, extension } = project;
                     return (
@@ -24,6 +32,7 @@ export default class Work extends React.Component {
                         ></Project>
                     )
                 }) }
+                </Suspense>
             </section>
         )
     }

@@ -1,12 +1,18 @@
 import React from 'react';
-import './Project.scss'
+import { SuspenseImage } from './SuspenseImage';
+
+import './Project.scss';
+
+export const ProjectSkeleton = () => (
+    <section className="project skeleton"></section>
+)
 
 export default class Project extends React.Component {
     render() {
         return (
             <section className="project" id={this.props.id} onClick={() => this.props.clickHandler(this.props.id)}>
                 <a className="project-link" href={this.props.url} rel="noopener noreferrer" target="_blank">
-                    <img src={`${process.env.PUBLIC_URL}/project-images/${this.props.id}.${this.props.imageExtension}`} alt={this.props.title}></img>
+                    <SuspenseImage src={`${process.env.PUBLIC_URL}/project-images/${this.props.id}.${this.props.imageExtension}`} alt={this.props.title}></SuspenseImage>
                 </a>
                 <div className="project-details">
                     <div className="project-details-top">
