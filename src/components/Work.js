@@ -5,7 +5,7 @@ import Curtain from './Curtain';
 import SkeletonLoaders from './SkeletonLoaders';
 import projectsArray from '../projects.json';
 
-const Work = () => {
+const Work = ({ clickHandler }) => {
     const pageSize = 6;
 
     const projectReducer = (state, action) => {
@@ -49,7 +49,7 @@ const Work = () => {
                                 tags={tags}
                                 url={url}
                                 imageExtension={extension === undefined ? "jpg" : extension}
-                                clickHandler={(id) => this.props.clickHandler(id)}
+                                clickHandler={(id) => clickHandler(id)}
                             ></Project>
                         )
                     })

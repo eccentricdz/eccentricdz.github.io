@@ -10,8 +10,9 @@
 
 .App.dark {
     .about {
+        color: $dark-secondary-color;
         a {
-            color: $secondary-color;
+            color: $dark-secondary-color;
         }
     }
 }

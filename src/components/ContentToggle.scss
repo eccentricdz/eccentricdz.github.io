@@ -61,3 +61,9 @@
         }
     }
 }
+
+.App.dark {
+    .content-toggle {
+        color: $dark-secondary-color;
+    }
+}

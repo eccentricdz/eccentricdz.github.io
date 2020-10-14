@@ -44,7 +44,7 @@ section.project {
     background-color: $light-base-color;
     padding: 2vw;
     font-size: 0.7rem;
-    line-height: 1.2rem;
+    line-height: 1.1rem;
     justify-content: space-between;
     pointer-events: none;
     opacity: 0;
@@ -71,6 +71,17 @@ section.project {
         color: $secondary-color;
       }
     }
+
+    .project-details-bottom {
+      .project-tags {
+        background: $light-grid-color;
+        display: inline-block;
+        padding: 3px 10px;
+        margin: 3px 3px 3px 0;
+        border-radius: 20px;
+        font-size: 0.6rem;
+      }
+    }
   }
 
   &:hover .project-details {
@@ -89,6 +100,17 @@ section.project {
     } 
     .project-details {
         border-color: $dark-grid-color;
+        .project-details-top {
+          .project-description {
+            color: $dark-secondary-color;
+          }
+        }
+
+        .project-details-bottom {
+          .project-tags {
+            background: $dark-grid-color;
+          }
+        }
     }
 }
 
@@ -115,13 +137,20 @@ section.project {
     }  
 
     .project-details {
-      font-size: 1rem;
+      font-size: 0.7rem;
       line-height: inherit;
-      padding: 5vh;
+      padding: 3vh;
       .project-details-top {
         .project-title,
         .project-divider {
           margin-bottom: 2vh;
+        }
+      }
+
+      .project-details-bottom {
+        .project-tags {
+          font-size: 0.7rem;
+          padding: 3px 10px;
         }
       }
     }

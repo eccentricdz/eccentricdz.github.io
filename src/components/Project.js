@@ -9,6 +9,10 @@ export const ProjectSkeleton = () => (
 
 export default class Project extends React.Component {
     render() {
+        const projectTags = this.props.tags.split(",").map((tag, idx) => {
+            return <p className="project-tags" key={idx}>{tag}</p>
+        })
+
         return (
             <section className="project" id={this.props.id} onClick={() => this.props.clickHandler(this.props.id)}>
                 <a className="project-link" href={this.props.url} rel="noopener noreferrer" target="_blank">
@@ -21,7 +25,7 @@ export default class Project extends React.Component {
                         <p className="project-description">{this.props.description}</p>
                     </div>
                     <div className="project-details-bottom">
-                        <p className="project-tags">{this.props.tags}</p>
+                        {projectTags}
                     </div>
                 </div>
             </section>
