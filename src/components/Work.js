@@ -18,7 +18,7 @@ const Work = ({ clickHandler }) => {
     }
 
     const [projectInfo, projectDispatch] = useReducer(projectReducer, { projectCount: pageSize, projects: projectsArray.slice(0, pageSize) })
-    const [startTransition, isPending] = React.unstable_useTransition({ timeoutMs: 10000 });
+    const [isPending, startTransition] = React.useTransition({ timeoutMs: 10000 });
 
     useEffect(() => {
         const scrollListener = () => {

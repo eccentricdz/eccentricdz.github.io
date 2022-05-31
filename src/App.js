@@ -82,11 +82,9 @@ export default class App extends React.Component {
 
   componentDidMount() {
     this.initializeReactGA();
-  }
-
-  componentWillMount() {
     this.setInitialColorMode();
-  }
+  }    
+
 
   render() {
     return (
