@@ -29,7 +29,7 @@
   #primary-rotator {
     color: $highlight-color;
     height: calc(50px + (76 - 50) * ((100vw - 800px) / (2560 - 800)));
-    padding: 10px 0;
+    padding: 11px 0;
   }
 }
 
@@ -66,6 +66,7 @@ div.grid-lines {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin-bottom: 12.5vh;
 
     .left-grid-2-2 {
       display: flex;
@@ -113,13 +114,13 @@ div.grid-lines {
     position: absolute;
     bottom: -1 * vGrid(1);
     width: 100vw;
-    background: $light-grid-color;
+    background: $highlight-color;
     padding: 2px hGrid(1);
     left: -1 * hGrid(1);
     font-size: 0.6rem;
     z-index: 10;
     text-align: center;
-    color: $secondary-color;
+    color: $light-base-color;
 
     a {
       color: $secondary-color;

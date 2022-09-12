@@ -118,9 +118,6 @@ export default class App extends React.Component {
                 <Link href="https://soundcloud.com/rahul-agarwal-397883738" id="soundcloud">Soundcloud</Link>
               </section>
             </div>
-            <div className="left-grid-2-3">
-              <Link href={Resume} id="resume-bottom">Resume</Link>
-            </div>
           </div>
         </div>
         <div className="right-grid">
@@ -143,7 +140,7 @@ export default class App extends React.Component {
 
           <footer>
             {/* <div className="left">Built with ❤ during the COVID-19 lockdown.</div> */}
-            Stay home, <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" target="_blank" rel="noopener noreferrer">stay informed,</a> stay safe!
+            Thank you for everything, AUI!
           </footer>
         </div>
       </div>
