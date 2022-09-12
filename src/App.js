@@ -115,7 +115,7 @@ export default class App extends React.Component {
               <section className="account-links-2">
                 <Link href="https://www.instagram.com/createdbyrahul/" id="instagram">Instagram</Link>
                 <Link href="https://www.linkedin.com/in/simplyrahul93/" id="linkedin">Linkedin</Link>
-                <Link href="https://soundcloud.com/rahul-agarwal-397883738" id="soundcloud">Soundcloud</Link>
+                <Link href="https://twitter.com/simplyrahul93" id="twitter">Twitter</Link>
               </section>
             </div>
           </div>
