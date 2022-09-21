@@ -114,13 +114,13 @@ div.grid-lines {
     position: absolute;
     bottom: -1 * vGrid(1);
     width: 100vw;
-    background: $highlight-color;
+    background: $light-grid-color;
     padding: 2px hGrid(1);
     left: -1 * hGrid(1);
     font-size: 0.6rem;
     z-index: 10;
     text-align: center;
-    color: $light-base-color;
+    color: $secondary-color;
 
     a {
       color: $secondary-color;

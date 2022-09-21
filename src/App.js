@@ -139,8 +139,7 @@ export default class App extends React.Component {
           </div>
 
           <footer>
-            {/* <div className="left">Built with ❤ during the COVID-19 lockdown.</div> */}
-            Thank you for everything, AUI!
+            <div className="left">Built with ❤ during the COVID-19 lockdown.</div>
           </footer>
         </div>
       </div>
