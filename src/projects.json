@@ -1,5 +1,12 @@
 [
     {
+        "title": "Bento Buzz - AI assisted news curation.",
+        "description": "Bento Buzz harnesses the power of artificial intelligence to sift through a thousand news stories daily, assigning them a score ranging from 0 to 10 to gauge their significance. Only stories earning a score surpassing 7 are featured.",
+        "id": "bentobuzz",
+        "url": "https://www.bentobuzz.xyz",
+        "tags": "UI / UX, Development, React, AI, ChatGPT"
+    },
+    {
         "title": "Coin Feed - News aggregator app for Crypto.",
         "description": "A news aggregator app that presents all that's going in the Crypto & Web 3 landscape in a sleek interface, letting you pick and choose your sources and re-arrange them based on your preferences. No ads, no bloat, just content in an intuitive interface.",
         "id": "coinfeed",
@@ -7,11 +14,11 @@
         "tags": "UI / UX, Development, React Native, Web3"
     },
     {
-        "title": "Jeevan - Mental Health Awareness Campaign",
-        "description": "Jeevan is a NGO based out of Jamshedpur, India that aims to reduce the stigma around mental health. I have been working with this NGO to design graphics for their social media outreach and related events and the project showcases some of them.",
-        "id": "jeevan",
-        "url": "https://www.behance.net/gallery/103796937/Jeevan-Mental-Health-Awareness-Campaign",
-        "tags": "Illustration, Graphic Design, Advertisement"
+        "title": "Ping Pong AI",
+        "description": "I built a ping-pong game where you play against an AI bot that gets better with every level. This project walks you through the entire design process and talks briefly about the development details.",
+        "id": "ping-pong",
+        "url": "https://eccentricdz.github.io/ping-pong-react/",
+        "tags": "UI / UX, Web Design, Web Development, Branding"
     },
     {
         "title": "Online Portfolio",
@@ -21,49 +28,6 @@
         "tags": "UI / UX, Web Design, Web Development"
     },
     {
-        "title": "Ping Pong AI",
-        "description": "I built a ping-pong game where you play against an AI bot that gets better with every level. This project walks you through the entire design process and talks briefly about the development details.",
-        "id": "ping-pong",
-        "url": "https://www.behance.net/gallery/100160075/Ping-Pong-AI",
-        "tags": "UI / UX, Web Design, Web Development, Branding"
-    },
-    {
-        "title": "Alpha & Omega",
-        "description": "Identity design for Alpha & Omega, a trading company based out of Belize.",
-        "id": "alphaomega",
-        "url": "https://www.behance.net/gallery/102488509/Alpha-Omega",
-        "tags": "Branding, Graphic Design, Creative Direction"
-    },
-    {
-        "title": "Watercolor Portraits",
-        "description": "I picked up this hobby during the ongoing lockdown, trying to learn how to paint watercolor portraits. This is a collection of some of my paintings.",
-        "id": "watercolor-portraits",
-        "url": "https://www.behance.net/gallery/101867293/Watercolor-Portraits",
-        "tags": "Watercolors, Painting, Portraits"
-    },
-    {
-        "title": "Digiup",
-        "description": "Digiup is a digital content platform based out of Greece that offers digital up-haul services for businesses like hotels / restaurants and more. I was commissioned to design the identity for the brand.",
-        "id": "digiup",
-        "url": "https://www.behance.net/gallery/95918745/Identity-Design-for-Digiup",
-        "tags": "Branding, Graphic Design, Creative Direction"
-    },
-    {
-        "title": "Logofolio 2019 / 2020",
-        "description": "A collection of logos I designed between 2019 - 2020.",
-        "id": "logofolio-1920",
-        "url": "https://www.behance.net/gallery/99216673/Logofolio-2019-2020",
-        "tags": "Branding, Graphic Design"
-    },
-    {
-        "title": "Learning Motion Design",
-        "description": "I am learning motion design and this collection showcases some of my work.",
-        "id": "motion",
-        "url": "https://dribbble.com/eccentricdz/collections/2036293-Learning-Motion-Design",
-        "tags": "Motion Design, Animation",
-        "extension": "gif"
-    },
-    {
         "title": "Sound Stash",
         "description": "A React app that enables it's users to search, play and download songs.",
         "id": "sound-stash",
@@ -71,17 +35,25 @@
         "tags": "Ideation, UI Design, Branding, Development"
     },
     {
-        "title": "Watercolors",
-        "description": "A collection of my watercolor paintings I made towards the end of 2019.",
-        "id": "watercolor-2019",
-        "url": "https://www.behance.net/gallery/88938015/Water-Color-Exercise",
-        "tags": "Watercolors, Painting"
+        "title": "Learning Motion Design",
+        "description": "I am learning motion design and this collection showcases some of my work.",
+        "id": "motion",
+        "url": "https://dribbble.com/eccentricdz/collections/2036293-Learning-Motion-Design",
+        "tags": "Motion Design, Animation, Lottie, Amazon Web Dev Con",
+        "extension": "gif"
     },
     {
-        "title": "Logofolio 2018",
-        "description": "A collection of branding work I undertook in the year 2018.",
-        "id": "logofolio-2018",
-        "url": "https://www.behance.net/gallery/74290269/Logofolio-2018",
-        "tags": "Branding, Graphic Design"
+        "title": "Jeevan - Mental Health Awareness Campaign",
+        "description": "Jeevan is a NGO based out of Jamshedpur, India that aims to reduce the stigma around mental health. I have been working with this NGO to design graphics for their social media outreach and related events and the project showcases some of them.",
+        "id": "jeevan",
+        "url": "https://www.behance.net/gallery/103796937/Jeevan-Mental-Health-Awareness-Campaign",
+        "tags": "Illustration, Graphic Design, Volunteering"
+    },
+    {
+        "title": "Watercolor Portraits",
+        "description": "I picked up this hobby during the ongoing lockdown, trying to learn how to paint watercolor portraits. This is a collection of some of my paintings.",
+        "id": "watercolor-portraits",
+        "url": "https://www.behance.net/gallery/101867293/Watercolor-Portraits",
+        "tags": "Watercolors, Painting, Portraits"
     }
 ]

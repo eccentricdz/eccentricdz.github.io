@@ -64,7 +64,7 @@ export default class App extends React.Component {
 
   // toggle the dark mode
   toggleMode() {
-    this.setState((state, props) => {
+    this.setState((state) => {
       const mode = state.mode === "light" ? "dark" : "light";
       this.assignColorModeToBody(mode);
       this.logUserAction('Dark Mode Toggle', mode);
@@ -103,19 +103,19 @@ export default class App extends React.Component {
             <div className="left-grid-2-1">
               <section className="primary">
                 <p id="my-name">Rahul Agarwal</p>
-                <Rotator elements={["Developer", "Designer", "Learner"]} id="primary-rotator"></Rotator>
+                <Rotator elements={["Developer", "Creator", "Learner"]} id="primary-rotator"></Rotator>
               </section>
             </div>
             <div className="left-grid-2-2">
               <section className="account-links-1">
-                <Link href="https://www.behance.net/eccentricdz" id="behance">Behance</Link>
-                <Link href="https://dribbble.com/eccentricdz" id="dribbble">Dribbble</Link>
                 <Link href="https://github.com/eccentricdz" id="github">Github</Link>
+                <Link href="https://read.cv/edz" id="readcv">Read.cv</Link>
+                <Link href="https://www.behance.net/eccentricdz" id="behance">Behance</Link>
               </section>
               <section className="account-links-2">
-                <Link href="https://www.instagram.com/createdbyrahul/" id="instagram">Instagram</Link>
                 <Link href="https://www.linkedin.com/in/simplyrahul93/" id="linkedin">Linkedin</Link>
-                <Link href="https://twitter.com/simplyrahul93" id="twitter">Twitter</Link>
+                <Link href="https://read.cv/edz/writing" id="blog">Blog</Link>
+                <Link href="https://www.instagram.com/createdbyrahul/" id="instagram">Instagram</Link>
               </section>
             </div>
           </div>

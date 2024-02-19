@@ -6,20 +6,23 @@ export default class About extends React.Component {
     render() {
         return (
             <section className="about">
-                <Curtain></Curtain>   
+                <Curtain></Curtain>
                 <p>
-                Hello! <br /> <br />
+                    Hello! <br/> <br/>
 
-                I am a designer / developer hybrid and enjoy crafting functional and aesthetic digital solutions, by means of design and code.<br /> <br />
+                    I'm a Vancouver-based Software Engineer with a passion for crafting visually stunning
+                    and functionally rich user experiences. Equipped with a Bachelor's degree in Computer Science and
+                    experience at both Amazon and Cloud Kitchens, I seamlessly blend
+                    aesthetics with technical expertise. <br/> <br/>
 
-                I have been obsessed with everything design for as long as I can remember and have freelanced for brands around the world designing identities, products and experiences.<br /> <br />
+                    Whether it's building intuitive interfaces, innovating with cutting-edge tech, or bridging the gap
+                    between creativity and code, I thrive in dynamic environments. My insatiable curiosity fuels my
+                    drive to continuously learn and master new technologies, pushing the boundaries of what's
+                    possible. <br/> <br/>
 
-                After graduating with a bachelor’s degree in Computer Science, I joined Amazon, where I was focusing on design systems and tooling for front-end development.<br /> <br />
+                    Interested in collaborating? Let's chat! Hit me up at<br/>
+                    <a className="about-link" href="mailto:this.agarwal@gmail.com">this.agarwal@gmail.com</a>
 
-                Currently I am based out of Vancouver and work for a startup in the food delivery space.<br /> <br />
-
-                Hit me up, if you’d like to work on a project with me or just say hello,<br />
-                <a className="about-link" href="mailto:this.agarwal@gmail.com">this.agarwal@gmail.com</a>
                 </p>
             </section>
         )
