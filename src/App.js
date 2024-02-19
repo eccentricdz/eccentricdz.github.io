@@ -7,8 +7,7 @@ import Toggle from './components/Toggle';
 import About from './components/About';
 import Work from './components/Work';
 import Curtain from './components/Curtain';
-import Resume from './documents/resume-design.pdf';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga'
 
 export function logReactEvent(eventData) {
   ReactGA.event(eventData)
@@ -97,7 +96,6 @@ export default class App extends React.Component {
 
           <div className="left-grid-1">
             <Toggle handleToggle={this.toggleMode}></Toggle>
-            <Link href={Resume} id="resume-top">Resume</Link>
           </div>
           <div className="left-grid-2">
             <div className="left-grid-2-1">
