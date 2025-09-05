@@ -4,7 +4,8 @@
         "description": "Soch replaces doomscrolling with an endless feed of AI-curated research articles, each paired with an AI-generated visual and summary.",
         "id": "soch",
         "url": "https://apps.apple.com/us/app/soch/id6747539661",
-        "tags": "UI / UX, iOS, AI, React Native"
+        "tags": "UI / UX, iOS, AI, React Native",
+        "extension": "png"
     },
     {
         "title": "Bento Buzz - AI assisted news curation.",
