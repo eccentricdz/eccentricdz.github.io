@@ -12,7 +12,7 @@ export const SuspenseImage = ({ src, alt, fallbackSrc }) => {
 const imageCache = {
     __cache: {},
     read(src) {
-        if (!this.__cache[src]) {
+        if (!(src in this.__cache)) {
             this.__cache[src] = new Promise((resolve) => {
                 const image = new Image();
                 image.onload = () => {
