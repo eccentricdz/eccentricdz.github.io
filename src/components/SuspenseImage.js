@@ -1,8 +1,12 @@
 import React from "react";
 
-export const SuspenseImage = ({ src, alt }) => {
+export const SuspenseImage = ({ src, alt, fallbackSrc }) => {
     imageCache.read(src);
-    return <img src={src} alt={alt} />
+    return <img src={src} alt={alt} onError={(e) => {
+        if (fallbackSrc) {
+            e.target.src = fallbackSrc;
+        }
+    }} />
 }
 
 const imageCache = {
@@ -15,10 +19,12 @@ const imageCache = {
                     this.__cache[src] = true;
                     resolve(this.__cache[src]);
                 }
+                image.onerror = () => {
+                    this.__cache[src] = false;
+                    resolve(this.__cache[src]);
+                }
                 image.src = src;
-            }).then(() => {
-                this.__cache[src] = true;
-            })
+            });
         }
         if (this.__cache[src] instanceof Promise) {
             throw this.__cache[src];
