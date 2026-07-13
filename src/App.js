@@ -102,7 +102,7 @@ export default class App extends React.Component {
             <div className="left-grid-2-1">
               <section className="primary">
                 <p id="my-name">Rahul Agarwal</p>
-                <Rotator elements={["Developer", "Creator", "Learner"]} id="primary-rotator"></Rotator>
+                <Rotator elements={["Builder", "Designer", "Engineer"]} id="primary-rotator"></Rotator>
               </section>
             </div>
             <div className="left-grid-2-2">
