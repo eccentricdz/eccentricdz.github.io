@@ -8,18 +8,18 @@
         "extension": "png"
     },
     {
-        "title": "Bento Buzz - AI assisted news curation.",
-        "description": "Bento Buzz harnesses the power of artificial intelligence to sift through a thousand news stories daily, assigning them a score ranging from 0 to 10 to gauge their significance. Only stories earning a score surpassing 7 are featured.",
-        "id": "bentobuzz",
-        "url": "https://www.bentobuzz.xyz",
-        "tags": "UI / UX, Development, React, AI, ChatGPT"
-    },
-    {
         "title": "Coin Feed - News aggregator app for Crypto.",
         "description": "A news aggregator app that presents all that's going in the Crypto & Web 3 landscape in a sleek interface, letting you pick and choose your sources and re-arrange them based on your preferences. No ads, no bloat, just content in an intuitive interface.",
         "id": "coinfeed",
-        "url": "https://play.google.com/store/apps/details?id=com.edz.CoinFeed&ref=producthunt",
+        "url": "https://www.producthunt.com/products/coin-feed/launches/coin-feed",
         "tags": "UI / UX, Development, React Native, Web3"
+    },
+    {
+        "title": "Bento Buzz - AI assisted news curation.",
+        "description": "Bento Buzz harnesses the power of artificial intelligence to sift through a thousand news stories daily, assigning them a score ranging from 0 to 10 to gauge their significance. Only stories earning a score surpassing 7 are featured.",
+        "id": "bentobuzz",
+        "url": "https://github.com/eccentricdz/bento-buzz",
+        "tags": "UI / UX, Development, React, AI, ChatGPT"
     },
     {
         "title": "Ping Pong AI",
@@ -27,13 +27,6 @@
         "id": "ping-pong",
         "url": "https://eccentricdz.github.io/ping-pong-react/",
         "tags": "UI / UX, Web Design, Web Development, Branding"
-    },
-    {
-        "title": "Online Portfolio",
-        "description": "I built my last portfolio site when I was graduating college and wanted to update it to something that is more representative of my work. The project showcases the design reasoning & process involved and talks briefly about the development",
-        "id": "portfolio",
-        "url": "https://www.behance.net/gallery/96064899/Online-Portfolio-2020",
-        "tags": "UI / UX, Web Design, Web Development"
     },
     {
         "title": "Sound Stash",
