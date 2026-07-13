@@ -19,6 +19,7 @@ export default class App extends React.Component {
     // represents the color mode of the application
     this.state = {
       content: "work",
+      mode: "light",
       showCurtain: false
     }
 
@@ -95,7 +96,7 @@ export default class App extends React.Component {
           {/* grid lines */}
 
           <div className="left-grid-1">
-            <Toggle handleToggle={this.toggleMode}></Toggle>
+            <Toggle isDark={this.state.mode === "dark"} handleToggle={this.toggleMode}></Toggle>
           </div>
           <div className="left-grid-2">
             <div className="left-grid-2-1">

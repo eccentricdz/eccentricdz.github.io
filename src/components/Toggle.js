@@ -2,27 +2,12 @@ import React from 'react';
 import './Toggle.scss';
 
 export default class Toggle extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      switchPosition: "left"
-    }
-
-    this.toggle = this.toggle.bind(this)
-  }
-
-  toggle() {
-    this.setState((state, props) => {
-      const switchPosition = state.switchPosition === "left" ? "right" : "left"
-      return { switchPosition }
-    })
-
-    this.props.handleToggle();
-  }
-
   render() {
+    // The switch position is derived from the active color mode so it always
+    // reflects the real theme rather than tracking clicks independently.
+    const switchPosition = this.props.isDark ? "right" : "left"
     return (
-      <div className={`${this.state.switchPosition} toggle-container`} onClick={this.toggle}>
+      <div className={`${switchPosition} toggle-container`} onClick={this.props.handleToggle}>
         <div className="toggle-switch"></div>
       </div>
     )
