@@ -14,7 +14,7 @@ a.my-link {
     width: 0;
     height: 3px;
     background-color: $highlight-color;
-    transition: width 0.2s ease-in-out;
+    transition: width 0.2s $ease-out;
   }
 
   &:hover::after {

@@ -145,3 +145,37 @@ div.grid-lines {
 
 @import "App_Mobile";
 @import "App_Dark";
+
+// Honor reduced-motion preferences: stop looping and large positional motion,
+// keep opacity and color cues that aid comprehension.
+@media (prefers-reduced-motion: reduce) {
+  // Freeze the looping role rotator on a single word.
+  .my-rotator .rotating-element {
+    animation: none;
+  }
+
+  .my-rotator .rotating-element:first-child {
+    transform: translateY(0);
+  }
+
+  .my-rotator .rotating-element:not(:first-child) {
+    display: none;
+  }
+
+  // Neutralize the curtain wipe so content simply appears.
+  .curtain {
+    animation: none !important;
+    width: 0 !important;
+  }
+
+  // Drop tile entrance, image reveal, and hover/press movement.
+  section.project,
+  .project-link img {
+    animation: none !important;
+  }
+
+  section.project:hover,
+  section.project:active {
+    transform: none !important;
+  }
+}
