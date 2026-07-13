@@ -8,19 +8,15 @@ export default class About extends React.Component {
             <section className="about">
                 <Curtain></Curtain>
                 <p>
-                    Hello! <br/> <br/>
+                    Hey, I'm Rahul, an engineer in Vancouver. <br/> <br/>
 
-                    I'm a Vancouver-based Software Engineer with a passion for crafting visually stunning
-                    and functionally rich user experiences. Equipped with a Bachelor's degree in Computer Science and
-                    experience at both Amazon and Cloud Kitchens, I seamlessly blend
-                    aesthetics with technical expertise. <br/> <br/>
+                    I build digital products for a living. Been at it about 10 years, these days as a
+                    senior engineer at Coinbase and before that at Amazon. I've got a soft spot for good
+                    design, and I'm in it for the moment an idea stops being an idea. <br/> <br/>
 
-                    Whether it's building intuitive interfaces, innovating with cutting-edge tech, or bridging the gap
-                    between creativity and code, I thrive in dynamic environments. My insatiable curiosity fuels my
-                    drive to continuously learn and master new technologies, pushing the boundaries of what's
-                    possible. <br/> <br/>
+                    Most of my attention right now goes to AI and what it lets us build. <br/> <br/>
 
-                    Interested in collaborating? Let's chat! Hit me up at<br/>
+                    Reach out if you're working on something good. <br/>
                     <a className="about-link" href="mailto:this.agarwal@gmail.com">this.agarwal@gmail.com</a>
 
                 </p>
