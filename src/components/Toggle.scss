@@ -10,6 +10,11 @@
   align-items: center;
   position: relative;
   cursor: pointer;
+  transition: transform 160ms $ease-out;
+
+  &:active {
+    transform: scale(0.97);
+  }
 
   .toggle-switch {
     height: 10px;
@@ -18,7 +23,7 @@
     margin: 0 4px;
     background: $highlight-color;
     position: absolute;
-    @include animate(left);
+    @include animate(left, $ease-in-out);
   }
 
   &.left .toggle-switch {

@@ -6,3 +6,8 @@ $dark-secondary-color: #949494;
 $light-base-color: #F9F9F9;
 $light-grid-color: #ECE8E8;
 $dark-grid-color: #333333;
+
+// Motion easing tokens. The built-in CSS curves are too weak; these give
+// UI transitions a more intentional, responsive feel.
+$ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+$ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);

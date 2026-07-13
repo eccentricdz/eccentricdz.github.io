@@ -11,7 +11,11 @@
 
     .content-toggle-button {
         cursor: pointer;
-        @include animate(color);
+        transition: color 250ms $ease-out, transform 160ms $ease-out;
+
+        &:active {
+            transform: scale(0.97);
+        }
     }
 
     .content-toggle-divider {
@@ -25,7 +29,7 @@
             height: 100%;
             width: 50%;
             background-color: $highlight-color;
-            @include animate(left);
+            @include animate(left, $ease-in-out);
             left: 0;
         }
     }

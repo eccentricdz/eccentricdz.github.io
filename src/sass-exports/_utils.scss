@@ -1,3 +1,5 @@
+@import 'variables';
+
 @function hGrid($units) {
     @return ($units / 12 * 100) * 1vw;
 }
@@ -6,6 +8,6 @@
     @return ($units / 8 * 100) * 1vh;
 }
 
-@mixin animate($property) {
-    transition: $property 250ms ease-in-out;
+@mixin animate($property, $easing: $ease-out) {
+    transition: $property 250ms $easing;
 }
